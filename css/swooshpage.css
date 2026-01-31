@@ -70,6 +70,11 @@ body {
     position: absolute;
     bottom: -15px;
 }
+h1{
+    color:  blue;
+    background-color: yellow;
+    padding: 2rem 1rem;
+}
 .sec ul .active a {
     color: var(--secondary);
 }
