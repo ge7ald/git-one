@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name1": "Manchester United Home Jersey",
+        "name2": "2023/24 Season",
+        "price": 49999,
+        "oldPrice": 65000,
+        "image": "images/manutd.jpg"
+    },
+    {
+        "id": 2,
+        "name1": "Chelsea Away Jersey",
+        "name2": "2023/24 Season",
+        "price": 47999,
+        "oldPrice": 60000,
+        "image": "images/chelsea.jpg"
+    },
+    {
+        "id": 3,
+        "name1": "Real Madrid Third Kit",
+        "name2": "2023/24 Season",
+        "price": 52000,
+        "oldPrice": 67000,
+        "image": "images/realmadrid.jpg"
+    }
+]
+
+
