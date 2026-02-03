@@ -1,0 +1,18 @@
+.ggg{
+    font-size: 200px;
+}
+.totherigth{
+    position: relative;
+    display: inline-block;
+    margin-top: 20vh;
+    align-content: end;
+    margin-left: 50%;
+    justify-content: end;
+    align-items: end;
+}
+.container{
+    margin-left: -40px;
+}
+#conntainerr2{
+    margin-left: -27vh;
+}

@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    background-color: rgb(233, 221, 236);
+    height: 65px;
+}
+
+.mam img {
+     width: 140px;
+    float: left;
+}
+
+.ma ul li a {
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 25px;
+      color: black;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ma ul {
+       float: right;
+       
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+.manu img {
+    width: 380px;
+    height: 340px;
+}
+
+.man img {
+    position: absolute;
+}
+.man2  {
+    float: inline-start;
+     margin-left: 440px;
+}
+
+.man3 {
+    margin-left: 880px;
+    float: left;
+    margin-top: 0;
+    position: absolute;
+}

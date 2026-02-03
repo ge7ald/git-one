@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+:root{
+    --primary: rgb(6, 32, 62);
+    --secondary: rgb(255, 255, 255);
+    --accent: rgb(18, 45, 251);
+    --text: rgb(181, 181, 181);
+    --font: 'Google Sans', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    color: var(--text);
+    font-family: var(--font  );
+}
+.icon {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(107, 107, 107);
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(7px);
+}
+.icon i {
+    padding: 1rem;
+    margin: 0.5rem 0.3rem 0.5rem 1rem;
+    background: linear-gradient(to bottom right, rgb(0, 106, 255), rgb(255, 16, 255));
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    color: var(--secondary);
+}
+.icon p {
+    font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--secondary);
+  font-variation-settings:
+    "GRAD" 0;
+    font-size: 1.3rem;
+}
+.sec {
+    margin-top: 5.5rem;
+    border-bottom: 1px solid rgb(107, 107, 107);
+}
+.sec ul{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    height: 100%;
+}
+.sec ul li {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.sec ul li.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background-color: rgb(23, 83, 249);
+    position: absolute;
+    bottom: -15px;
+}
+h1{
+    color:  blue;
+    background-color: yellow;
+    padding: 2rem 1rem;
+}
+.sec ul .active a {
+    color: var(--secondary);
+}
+.sec ul li i {
+    font-size: 1.5rem;
+    margin-right: 0.2rem;
+}
+.sec ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: "Google Sans", sans-serif;
+    font-weight: 500;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+}
+
+.main .main-icon{
+    height: 8rem;
+    align-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--text );
+}
+.main .main-icon i {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.258);
+    border-radius: 50%;
+}
+.main .main-icon i:hover {
+    transition: all 0.5s ease-in-out;
+    animation: plusSpin 1s linear infinite;
+    color: var(--secondary);
+    background: linear-gradient(to bottom right, rgb(0, 106, 255), rgb(255, 16, 255));
+}
+.main-text {
+    margin-top: 3rem;
+}
+@keyframes plusSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.searchSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 1.5rem;
+}
+form{
+    width: 85%;
+    position: relative;
+}
+form input[type="text"], .dropDown select {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 12px;
+    padding: 0.5rem 0 0.5rem 3rem;
+    background: rgba(30, 30, 30, 0.351);
+    border: 1px solid var(--text);
+    color: var(--text);
+}
+form i {
+    position: absolute;
+    left: 10px;
+    top: 29px;
+    transform: translateY(-50%);
+    color: transparent;
+    font-size: 1.5rem;
+    background: linear-gradient(to bottom right, rgb(0, 106, 255), rgb(255, 16, 255));
+    background-clip: text;
+}
+i {
+    color: transparent;
+    background: linear-gradient(to bottom right, rgb(0, 106, 255), rgb(255, 16, 255));
+    background-clip: text;
+}
+.dropDown select {
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: white;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+.section-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-left: 12rem;
+}
+.workout {
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding-bottom: 10px;
+    position: relative;
+    transition: 0.1s ease-in-out;
+}
+.workout:hover {
+    border: 1px solid rgb(9, 69, 249);
+}
+.workout:hover .workout-img img {
+    scale: 1.2;
+    filter: blur(2px);
+}
+.workout-img {
+    width: 100%;
+    height: 30vh;
+    z-index: -1;
+    
+}
+.workout-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s ease-in;
+}
+.text{
+    background: var(--primary);
+    padding: 1rem;
+    font-family: var(--font);
+    color: var(--secondary);
+    margin-top: -15px;
+}
+.text p {
+    color: var(--text);
+    font-size: 13.5px;
+    margin-top: -12px;
+}
+.text h3 {
+    font-weight: 100;
+}
+#chest {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    background: rgba(9, 69, 249, 0.177);
+    border-radius: 1.2rem;
+    backdrop-filter: blur(8px);
+    padding: 0.3rem 1.6rem;
+    color: var(--secondary);
+}
+span {
+    background-color: rgba(139, 138, 138, 0.181);
+    font-size: 13px;
+    color: var(--text);
+    padding: 0.3rem 0.7rem;
+    border-radius: 2px;
+}
+
+button {
+    width: 100%;
+    margin-top: 17px;
+    border: none;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    background: rgb(9, 69, 249);
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
